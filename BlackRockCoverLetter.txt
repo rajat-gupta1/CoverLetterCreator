@@ -1,0 +1,30 @@
+[Your Name]
+[Your Address]
+[City, State, ZIP Code]
+[Email Address]
+[Phone Number]
+[Date]
+
+[Recipient's Name]
+[Recipient's Job Title]
+[Company Name]
+[Company Address]
+[City, State, ZIP Code]
+
+Dear [Recipient's Name],
+
+I am writing to express my interest in the Associate-level investment professional position at BlackRock's US Private Capital. With my background in credit investing and strong research and modeling skills, I believe I am well-suited for this role and can contribute to the success of BlackRock Alternatives.
+
+After reviewing the job description and learning more about BlackRock Alternatives, I am impressed by the firm's commitment to establishing itself as a preeminent partner in alternative investing globally. As one of the top five largest alternative asset managers in the world, BlackRock Alternatives operates on an integrated platform consisting of real estate, infrastructure, credit, private equity, and hedge funds. The scale and expertise offered by BlackRock provide a unique opportunity to collaborate with teams across the firm and shape the future of Alts investing.
+
+In my previous role as a Chief Manager and Senior Data Scientist at IDFC First Bank, I gained valuable experience in credit risk analysis and portfolio management. I successfully developed a behavior score for existing credit card customers using GBM, resulting in a 10% increase in revenue. Additionally, I engineered a logistic regression model to identify the base for cross-selling credit cards, leading to a 12% improvement in overall acquisition and a 14% decrease in bad rate. These experiences have honed my analytical and problem-solving skills, making me well-equipped to contribute to the success of BlackRock's US Private Capital team.
+
+Furthermore, I am excited about the opportunity to work in a people-centric organization like BlackRock, where employees are valued and supported. The company's commitment to creating an inclusive environment aligns with my own values, and I believe that a diverse range of perspectives and talent is crucial for driving innovation and success.
+
+I am confident that my skills, experience, and passion for alternative investing make me a strong candidate for this position. I am eager to contribute to BlackRock's mission of helping more and more people experience financial well-being and would welcome the opportunity to discuss how my qualifications align with the needs of the firm.
+
+Thank you for considering my application. I have attached my resume for your review, and I look forward to the possibility of discussing this opportunity further.
+
+Sincerely,
+
+[Your Name]
