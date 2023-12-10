@@ -11,7 +11,9 @@ Use the command "streamlit run CoverLetterCreator.py" on terminal to run the UI 
 
 The video - Demo.mp4 gives a detailed demo of the code and the user interface  
 
-The streamlit provides a great platform for creating a UI for running the code. The images below show a snapshot of the same:  
+The streamlit provides a great platform for creating a UI for running the code. The image below shows a snapshot of uploading the JD and the resume:  
 
 ![Uploading Docs](Demo1.png)
+
+The second image shows a sample cover letter and the link to download the letter.  
 ![Getting a download link](Demo2.png)
