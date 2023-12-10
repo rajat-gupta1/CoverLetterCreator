@@ -33,10 +33,10 @@ def scrape_website(url):
     if response.status_code == 200:
 
         # Parse the HTML content of the webpage using BeautifulSoup
-        soup = BeautifulSoup(response.text, 'html.parser')
+        soup = BeautifulSoup(response.text, "html.parser")
 
         # Extract text content from all <p> (paragraph) tags
-        paragraphs = [p.text.strip() for p in soup.find_all('p')]
+        paragraphs = [p.text.strip() for p in soup.find_all("p")]
 
         web_str = ""
         for para in paragraphs:
@@ -48,7 +48,7 @@ def scrape_website(url):
 
 def get_loader(uploaded_file):
     """
-    Saves an uploaded PDF file to the 'Docs' directory, converts it to 
+    Saves an uploaded PDF file to the "Docs" directory, converts it to 
     Langchain Document, and returns it
 
     Args:
@@ -65,12 +65,12 @@ def get_loader(uploaded_file):
 
         os.mkdir("Docs")
 
-         # Write the uploaded PDF file to the 'Docs' directory
+         # Write the uploaded PDF file to the "Docs" directory
         with open(os.path.join("Docs",uploaded_file.name),"wb") as f: 
             f.write(uploaded_file.getbuffer()) 
 
         # Load all PDF files from current directory as a Langchain Document
-        loader = DirectoryLoader(f'docs', glob="./*.pdf", loader_cls=PyPDFLoader)
+        loader = DirectoryLoader(f"docs", glob="./*.pdf", loader_cls=PyPDFLoader)
         docs = loader.load()
 
         # Return it as a Langchain Document instead of an array
@@ -79,36 +79,36 @@ def get_loader(uploaded_file):
 def main():     
 
     # Set the title of the Streamlit app
-    st.title('Cover Letter Creator')
+    st.title("Cover Letter Creator")
     
     # Create a form for user input
-    with st.form('my_form'):
-        JD_option = st.selectbox('How do you want to submit the JD?',('PDF', 'Provide URL'), index=None)
-        Resume_option = st.selectbox('How do you want to submit your Resume?',('PDF', 'Paste as Text'), index=None)
-        submitted = st.form_submit_button('Submit')
+    with st.form("my_form"):
+        JD_option = st.selectbox("How do you want to submit the JD?",("PDF", "Provide URL"), index=None)
+        Resume_option = st.selectbox("How do you want to submit your Resume?",("PDF", "Paste as Text"), index=None)
+        submitted = st.form_submit_button("Submit")
 
     JD = None
     Resume = None
 
     # Process user input based on JD option
-    if JD_option == 'PDF':
-        JD = st.file_uploader('Upload the JD', type='pdf')
+    if JD_option == "PDF":
+        JD = st.file_uploader("Upload the JD", type="pdf")
         JD = get_loader(JD)
         
-    elif JD_option == 'Provide URL':
-        JD = st.text_input('JD_URL', None, placeholder='Paste the URL for the given JD')
+    elif JD_option == "Provide URL":
+        JD = st.text_input("JD_URL", None, placeholder="Paste the URL for the given JD")
         if JD is not None:
             JD = scrape_website(JD)
             # Convert JD to Langchain Document
             JD =  Document(page_content=JD, metadata={"source": "local"})
 
     # Process user input based on Resume option
-    if Resume_option == 'PDF':
-        Resume = st.file_uploader('Upload the Resume', type='pdf')
+    if Resume_option == "PDF":
+        Resume = st.file_uploader("Upload the Resume", type="pdf")
         Resume = get_loader(Resume)
 
-    elif Resume_option == 'Paste as Text':
-        Resume = st.text_input('Resume', None, placeholder='Type your Resume here')
+    elif Resume_option == "Paste as Text":
+        Resume = st.text_input("Resume", None, placeholder="Type your Resume here")
         if Resume is not None:
             Resume =  Document(page_content=Resume, metadata={"source": "local"})
 
@@ -122,8 +122,8 @@ def main():
     prompt_template = ""
 
     with st.form("my_form2"):
-        prompt_template = st.text_input('Prompt Template (Do not change if you are unsure)', prompt_template2)
-        submitted2 = st.form_submit_button('Submit')
+        prompt_template = st.text_input("Prompt Template (Do not change if you are unsure)", prompt_template2)
+        submitted2 = st.form_submit_button("Submit")
 
     # If the prompt has been submitted
     if submitted2:
@@ -148,5 +148,5 @@ def main():
         # Add a download button for the generated Cover Letter
         st.download_button("Download Cover Letter", Cover_Letter, file_name="CoverLetter.txt")
         
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

@@ -13,7 +13,7 @@ The video - Demo.mp4 gives a detailed demo of the code and the user interface
 
 The streamlit provides a great platform for creating a UI for running the code. The image below shows a snapshot of uploading the JD and the resume:  
 
-![Uploading Docs](Demo1.png)
+![Uploading Docs](Images/Demo1.png)
 
 The second image shows a sample cover letter and the link to download the letter.  
-![Getting a download link](Demo2.png)
+![Getting a download link](Images/Demo2.png)
