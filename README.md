@@ -1,6 +1,8 @@
 # Cover Letter Creator
 
-The project creates a customized cover letter based on the job description and the resume provided.
+The project creates a customized cover letter based on the job description and the resume provided. The video below gives a demo of the application:  
+
+[![Demo Video](Images/Demo3.png)](https://www.youtube.com/watch?v=XSK_XxuIRh8)
 
 ## Requirements
 
@@ -17,6 +19,3 @@ The streamlit provides a great platform for creating a UI for running the code. 
 
 The second image shows a sample cover letter and the link to download the letter.  
 ![Getting a download link](Images/Demo2.png)
-
-Demo Video
-[![Demo Video](Images/Demo1.png)](https://www.youtube.com/watch?v=XSK_XxuIRh8)
