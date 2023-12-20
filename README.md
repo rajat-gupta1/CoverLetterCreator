@@ -19,4 +19,4 @@ The second image shows a sample cover letter and the link to download the letter
 ![Getting a download link](Images/Demo2.png)
 
 Demo Video
-[![Demo Video](Images/Demo1.jpg)](https://www.youtube.com/watch?v=XSK_XxuIRh8)
+[![Demo Video](Images/Demo1.png)](https://www.youtube.com/watch?v=XSK_XxuIRh8)
