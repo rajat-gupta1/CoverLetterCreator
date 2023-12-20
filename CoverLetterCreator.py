@@ -45,6 +45,7 @@ def scrape_website(url):
     
     else:
         print("Failed to retrieve the web page. Status code:", response.status_code)
+        st.write("Failed to retrieve the web page.")
 
 def get_loader(uploaded_file):
     """
